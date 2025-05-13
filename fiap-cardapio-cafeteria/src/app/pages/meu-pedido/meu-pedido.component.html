@@ -1,0 +1,46 @@
+<div class="menu">
+    <div style="padding-left:60px;padding-right:60px;">
+        <h4>HOME</h4>
+    </div>
+    <div style="padding-left:60px;padding-right:60px;">
+        <h4>SOBRE</h4>
+    </div>
+    <div class="circle"></div>
+    <div style="padding-left:60px;padding-right:60px;">
+        <h4>CONTATO</h4>
+    </div>
+</div>
+<div class="formulario">
+    <form>
+        <div class="itens-pedido">
+            <div style="display: inline-flex; width: 80%;">
+                <div style="width: 80%">
+                    <h2>MEU PEDIDO</h2>
+                </div>
+                <div class="botao-voltar">
+                    <button>
+                        <h3>voltar</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="campos">
+                <h4 style="font-weight: 400;margin-right: 20px; vertical-align: center;">Nome: </h4>
+                <input type="text" style="background-color: #FFFFFF;width: 250px; height: 30px;">
+                <h4>Comanda: {{ comanda }}</h4>
+                <h4>Mesa: {{ mesa }}</h4>
+            </div>
+            <div style="padding-bottom: 50px;">
+                <app-item-pedido nome="Cappuccino" quantidade="1" subtotal="10.00"></app-item-pedido>
+                <app-item-pedido nome="Iced Matcha Latte" quantidade="2" subtotal="20.00"></app-item-pedido>
+                <app-item-pedido nome="Pão de Queijo Recheado" quantidade="2" subtotal="30.00"></app-item-pedido>
+            </div>
+            <div class="botao-enviar">
+                <button>
+                    <h3>Enviar Pedido</h3>
+                </button>
+            </div>
+        </div>
+    </form>
+    
+</div>
+
